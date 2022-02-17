@@ -49,7 +49,7 @@ namespace TextEditor
             Menu();
 
         }
-
+        //sair com ESC
         static void Editar()
         {
             Console.Clear();
@@ -62,7 +62,7 @@ namespace TextEditor
             {
                 text += Console.ReadLine();
                 text += Environment.NewLine;
-            }
+            } //sair com ESC
             while (Console.ReadKey().Key != ConsoleKey.Escape);
 
             Salvar(text);
